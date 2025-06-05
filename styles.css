@@ -1,29 +1,98 @@
-ody {
+body {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: #eee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
+  max-width: 480px;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #1f1f1f 0%, #2b2b2b 100%);
+  border-radius: 14px;
+  box-shadow: 0 0 40px #ff4500cc;
   text-align: center;
-  max-width: 600px;
-  padding: 40px;
-  border: 1px solid #333;
-  border-radius: 12px;
-  background-color: #1a1a1a;
-  box-shadow: 0 0 20px rgba(255, 69, 0, 0.2);
 }
 
-a {
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.25em;
+  margin: 0 0 12px;
+  text-transform: uppercase;
   color: #ff4500;
-  text-decoration: none;
+  text-shadow: 0 0 12px #ff4500;
 }
-a:hover {
-  text-decoration: underline;
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #aaa;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #ccc;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+.coming-soon {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: #ff4500;
+  text-shadow: 0 0 10px #ff4500;
+  animation: pulse 2s infinite;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.footer-note {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #ff450080;
+  user-select: none;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 10px #ff4500;
+  }
+  50% {
+    opacity: 0.6;
+    text-shadow: 0 0 25px #ff4500;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 50px 40px;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  .subtitle {
+    font-size: 1.6rem;
+  }
+  .description {
+    font-size: 1.1rem;
+  }
+  .coming-soon {
+    font-size: 3rem;
+  }
+  .footer-note {
+    font-size: 1rem;
+  }
 }
