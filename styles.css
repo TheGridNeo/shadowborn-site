@@ -1,98 +1,63 @@
-body {
-  background-color: #0a0a0a;
-  color: #e0e0e0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset */
+* {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-color: #121212; /* soft dark */
+  color: #f0f0f0; /* bright text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.container {
-  max-width: 480px;
-  padding: 40px 30px;
-  background: linear-gradient(135deg, #1f1f1f 0%, #2b2b2b 100%);
-  border-radius: 14px;
-  box-shadow: 0 0 40px #ff4500cc;
+  height: 100vh;
   text-align: center;
+  padding: 20px;
+  user-select: none;
 }
 
+/* Main container */
+main {
+  max-width: 500px;
+}
+
+/* Title */
 h1 {
   font-size: 3.5rem;
-  letter-spacing: 0.25em;
-  margin: 0 0 12px;
-  text-transform: uppercase;
-  color: #ff4500;
-  text-shadow: 0 0 12px #ff4500;
+  font-weight: 900;
+  color: #ff6f3c; /* softer orange */
+  text-shadow:
+    0 0 8px #ff6f3c99,
+    0 0 20px #ff6f3c66;
+  margin-bottom: 0.5em;
 }
 
+/* Subtitle */
 .subtitle {
-  font-size: 1.3rem;
-  margin-bottom: 30px;
-  font-weight: 600;
-  color: #aaa;
-  letter-spacing: 0.07em;
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  color: #f5a663;
+  margin-bottom: 1.5em;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
-.description {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 25px;
-  color: #ccc;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  user-select: none;
-}
-
+/* Coming soon */
 .coming-soon {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
-  letter-spacing: 0.3em;
-  color: #ff4500;
-  text-shadow: 0 0 10px #ff4500;
-  animation: pulse 2s infinite;
-  margin-bottom: 20px;
-  user-select: none;
+  color: #ffffff;
+  text-shadow:
+    0 0 5px #ffffff88;
+  margin-bottom: 2em;
 }
 
-.footer-note {
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #ff450080;
-  user-select: none;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-    text-shadow: 0 0 10px #ff4500;
-  }
-  50% {
-    opacity: 0.6;
-    text-shadow: 0 0 25px #ff4500;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    padding: 50px 40px;
-  }
-  h1 {
-    font-size: 4.5rem;
-  }
-  .subtitle {
-    font-size: 1.6rem;
-  }
-  .description {
-    font-size: 1.1rem;
-  }
-  .coming-soon {
-    font-size: 3rem;
-  }
-  .footer-note {
-    font-size: 1rem;
-  }
+/* Footer */
+footer p {
+  font-size: 0.85rem;
+  color: #888;
+  letter-spacing: 0.1em;
 }
