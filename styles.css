@@ -7,8 +7,8 @@
 
 /* Body styles */
 body {
-  background-color: #121212; /* soft dark */
-  color: #f0f0f0; /* bright text */
+  background-color: #121212;
+  color: #f0f0f0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
@@ -21,18 +21,18 @@ body {
 
 /* Main container */
 main {
-  max-width: 500px;
+  max-width: 520px;
 }
 
 /* Title */
 h1 {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 900;
-  color: #ff6f3c; /* softer orange */
+  color: #ff6f3c;
   text-shadow:
     0 0 8px #ff6f3c99,
     0 0 20px #ff6f3c66;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 /* Subtitle */
@@ -40,14 +40,22 @@ h1 {
   font-size: 1.2rem;
   letter-spacing: 0.2em;
   color: #f5a663;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.4em;
   text-transform: uppercase;
   font-weight: 600;
 }
 
+/* Motto */
+.motto {
+  font-style: italic;
+  color: #ffa469;
+  font-weight: 600;
+  margin-bottom: 1.8em;
+}
+
 /* Coming soon */
 .coming-soon {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #ffffff;
   text-shadow:
@@ -55,9 +63,38 @@ h1 {
   margin-bottom: 2em;
 }
 
+/* Notify text */
+.notify {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 2.5em;
+  line-height: 1.5;
+}
+
+/* Social icons container */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3em;
+}
+
+/* Social icon style */
+.social {
+  font-size: 2rem;
+  color: #ff6f3c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social:hover {
+  color: #ffa469;
+}
+
 /* Footer */
 footer p {
   font-size: 0.85rem;
-  color: #888;
+  color: #666;
   letter-spacing: 0.1em;
+  user-select: text;
 }
